@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload PDF — AI StudyMate</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="/" class="brand-logo">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+          </svg>
+        </div>
+        <span>AI StudyMate</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="/" class="nav-link">Home</a></li>
+        <li><a href="/upload" class="nav-link active">Upload</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="container">
+      
+      <div style="text-align: center; margin-bottom: 2rem;">
+        <h1>Upload Your Subject PDF</h1>
+        <p class="text-muted" style="margin-top: 0.5rem;">AI StudyMate will extract topics, analyze core concepts, and build your custom mock test bank.</p>
+      </div>
+
+      <div class="upload-card-wrapper">
+        <div class="card">
+          
+          <!-- Drag & Drop Zone -->
+          <div id="dropzone" class="dropzone">
+            <input type="file" id="pdf-file-input" accept=".pdf,application/pdf" style="display: none;">
+            
+            <div class="dropzone-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="12" y1="18" x2="12" y2="12"></line>
+                <line x1="9" y1="15" x2="15" y2="15"></line>
+              </svg>
+            </div>
+
+            <h3 class="dropzone-title">Upload Your Subject PDF</h3>
+            <p class="dropzone-sub">Drag & drop your PDF here or browse your device</p>
+            
+            <button type="button" id="browse-btn" class="btn btn-primary">Browse PDF</button>
+
+            <div class="file-specs">
+              <span>📄 Supported format: <strong>PDF</strong></span>
+              <span>📦 Maximum size: <strong>20 MB</strong></span>
+            </div>
+          </div>
+
+          <!-- Selected File Preview Card -->
+          <div id="selected-file-card" class="selected-file-card">
+            <div class="file-info-row">
+              <div class="file-meta-left">
+                <div class="file-badge-icon">PDF</div>
+                <div>
+                  <div id="file-name-display" style="font-weight: 700; color: var(--text-main); font-size: 1.05rem;">filename.pdf</div>
+                  <div id="file-size-display" class="text-xs text-muted" style="margin-top: 0.2rem;">0.00 MB</div>
+                </div>
+              </div>
+
+              <button type="button" id="remove-file-btn" class="btn btn-secondary btn-sm" title="Remove selected file">
+                Remove
+              </button>
+            </div>
+
+            <div style="margin-top: 1.5rem; text-align: right;">
+              <button type="button" id="continue-upload-btn" class="btn btn-primary btn-lg" style="width: 100%;">
+                Continue to Processing →
+              </button>
+            </div>
+          </div>
+
+          <!-- 1-Click Sample Demo Divider -->
+          <div style="margin-top: 2rem; border-top: 1px solid var(--border-color); padding-top: 1.5rem; text-align: center;">
+            <p class="text-sm text-muted" style="margin-bottom: 0.75rem;">Don't have a PDF right now? Try our pre-compiled academic primer:</p>
+            <button type="button" id="sample-demo-btn" class="btn btn-secondary btn-sm">
+              ⚡ Load Sample "Machine Learning & AI Concepts" PDF
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>AI StudyMate — AI-Powered PDF to Mock Test & Interview Preparation Platform.</p>
+    </div>
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/upload.js') }}"></script>
+</body>
+</html>

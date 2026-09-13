@@ -1,0 +1,597 @@
+{
+  "metadata": {
+    "filename": "7e3e7607_Question_Bank_2311BMO904T_SMART_HEALTHCARE_TECHNOLOGIES_AND_SYSTEMS.pdf",
+    "total_questions": 38,
+    "total_pages": 43,
+    "total_words": 9665,
+    "topics": [
+      "2311BMO904T - SMART HEALTHCARE TECHNOLOGIES AND SYSTEMS",
+      "QUESTION BANK",
+      "Unit – I",
+      "Part A",
+      "Q.No",
+      "12.",
+      "State the contribution of AI to cancer management.",
+      "CO1",
+      "12 Ans",
+      "AI helps in cancer detection, image analysis,",
+      "Analyze the role of Nanotechnology and IoMT in enhancing",
+      "healthcare services.",
+      "Ans",
+      "Nanotechnology deals with materials at the nanoscale, while IoMT",
+      "Outline the effectiveness of AI-supported cardiac monitoring"
+    ]
+  },
+  "questions": [
+    {
+      "question": "According to the material, what best describes 'CO1 \n1A \nK3 \n15 Ans \nIoMT'?",
+      "options": [
+        "Minimizes computational latency through inline caching.",
+        "Applies statistical normalization across all attributes.",
+        "Processes unlabelled data without external supervision.",
+        "Continuous patient monitoring."
+      ],
+      "correct_answer": 3,
+      "explanation": "As stated in the material: \"CO1 \n1A \nK3 \n15 Ans \nIoMT enables continuous patient monitoring, \nautomated data collection, and efficient hospital \nmanagement.\"",
+      "topic": "2311BMO904T - SMART HEALTHCARE TECHNOLOGIES AND SYSTEMS",
+      "difficulty": "Hard",
+      "source_reference": "Pages 1-2 — 2311BMO904T - SMART HEALTHCARE TECHNOLOGIES AND SYSTEMS",
+      "id": 1
+    },
+    {
+      "question": "Which of the following statements is TRUE regarding 2311BMO904T - SMART HEALTHCARE TECHNOLOGIES AND SYSTEMS?",
+      "options": [
+        "2311BMO904T - SMART HEALTHCARE TECHNOLOGIES AND SYSTEMS is exclusively executed in offline hardware environments.",
+        "2311BMO904T - SMART HEALTHCARE TECHNOLOGIES AND SYSTEMS does not apply under the conditions described in the text.",
+        "2311BMO904T - SMART HEALTHCARE TECHNOLOGIES AND SYSTEMS strictly prohibits iterative optimization and validation.",
+        "CO1 \n1A \nK1 \n1 Ans \nAI is the simulation of human intelligence by \nmachines to perform tasks such as diagnosis, \nprediction, and decision-making in healthcare."
+      ],
+      "correct_answer": 3,
+      "explanation": "According to the document: \"CO1 \n1A \nK1 \n1 Ans \nAI is the simulation of human intelligence by \nmachines to perform tasks such as diagnosis, \nprediction, and decision-making in healthcare.\"",
+      "topic": "2311BMO904T - SMART HEALTHCARE TECHNOLOGIES AND SYSTEMS",
+      "difficulty": "Medium",
+      "source_reference": "Pages 1-2 — 2311BMO904T - SMART HEALTHCARE TECHNOLOGIES AND SYSTEMS",
+      "id": 2
+    },
+    {
+      "question": "According to the material, what best describes 'CO1 \n1B \nK4 \nAns \nAI'?",
+      "options": [
+        "Processes unlabelled data without external supervision.",
+        "Computer systems to perform intelligent tasks \nsuch as diagnosis.",
+        "Stores intermediate calculations permanently on disk.",
+        "Aggregates external network requests sequentially."
+      ],
+      "correct_answer": 1,
+      "explanation": "As stated in the material: \"CO1 \n1B \nK4 \nAns \nAI enables computer systems to perform intelligent tasks \nsuch as diagnosis, prediction, and treatment planning.\"",
+      "topic": "Analyze the role of Nanotechnology and IoMT in enhancing",
+      "difficulty": "Hard",
+      "source_reference": "Pages 3-6 — Analyze the role of Nanotechnology and IoMT in enhancing",
+      "id": 3
+    },
+    {
+      "question": "Which of the following statements is TRUE regarding Analyze the role of Nanotechnology and IoMT in enhancing?",
+      "options": [
+        "Analyze the role of Nanotechnology and IoMT in enhancing does not apply under the conditions described in the text.",
+        "Analyze the role of Nanotechnology and IoMT in enhancing \nhealthcare services.",
+        "Analyze the role of Nanotechnology and IoMT in enhancing strictly prohibits iterative optimization and validation.",
+        "Analyze the role of Nanotechnology and IoMT in enhancing is exclusively executed in offline hardware environments."
+      ],
+      "correct_answer": 1,
+      "explanation": "According to the document: \"Analyze the role of Nanotechnology and IoMT in enhancing \nhealthcare services.\"",
+      "topic": "Analyze the role of Nanotechnology and IoMT in enhancing",
+      "difficulty": "Medium",
+      "source_reference": "Pages 3-6 — Analyze the role of Nanotechnology and IoMT in enhancing",
+      "id": 4
+    },
+    {
+      "question": "According to the material, what best describes 'CO1 \n1B \nK5 \nAns \nIoMT'?",
+      "options": [
+        "Minimizes computational latency through inline caching.",
+        "Medical services to healthcare professionals and \npatients.",
+        "Real-time \ntracking of health conditions.",
+        "Interconnected medical devices that communicate \nthrough the internet to provide healthcare services."
+      ],
+      "correct_answer": 3,
+      "explanation": "As stated in the material: \"(Case Study) \nCO1 \n1B \nK5 \nAns \nIoMT refers to interconnected medical devices that communicate \nthrough the internet to provide healthcare services.\"",
+      "topic": "pathology, highlighting the growing role of deep learning in",
+      "difficulty": "Hard",
+      "source_reference": "Pages 7-11 — pathology, highlighting the growing role of deep learning in",
+      "id": 5
+    },
+    {
+      "question": "According to the material, what best describes 'Continuous remote patient monitoring'?",
+      "options": [
+        "Stores intermediate calculations permanently on disk.",
+        "Interconnected medical devices that communicate \nthrough the internet to provide healthcare services.",
+        "Medical services to healthcare professionals and \npatients.",
+        "Real-time \ntracking of health conditions."
+      ],
+      "correct_answer": 3,
+      "explanation": "As stated in the material: \"CO2 2A \nK1 \n8 Ans \nContinuous remote patient monitoring enables real-time \ntracking of health conditions.\"",
+      "topic": "pathology, highlighting the growing role of deep learning in",
+      "difficulty": "Hard",
+      "source_reference": "Pages 7-11 — pathology, highlighting the growing role of deep learning in",
+      "id": 6
+    },
+    {
+      "question": "According to the material, what best describes 'and'?",
+      "options": [
+        "Interconnected medical devices that communicate \nthrough the internet to provide healthcare services.",
+        "Medical services to healthcare professionals and \npatients.",
+        "Real-time \ntracking of health conditions.",
+        "Reverses gradient propagation unconditionally."
+      ],
+      "correct_answer": 1,
+      "explanation": "As stated in the material: \"CO2 2A \nK1 \n13 Ans \nThe Medical Server Layer is a component of the IoMT \narchitecture that receives healthcare data from the Data \nManagement Layer, processes and analyses the information, \nand provides medical services to healthcare professionals and \npatients.\"",
+      "topic": "pathology, highlighting the growing role of deep learning in",
+      "difficulty": "Easy",
+      "source_reference": "Pages 7-11 — pathology, highlighting the growing role of deep learning in",
+      "id": 7
+    },
+    {
+      "question": "Which of the following statements is TRUE regarding pathology, highlighting the growing role of deep learning in?",
+      "options": [
+        "pathology, highlighting the growing role of deep learning in strictly prohibits iterative optimization and validation.",
+        "pathology, highlighting the growing role of deep learning in does not apply under the conditions described in the text.",
+        "Conclude how IoMT serves as a strategic IT-based innovation for \nachieving Smart Hospitals.",
+        "pathology, highlighting the growing role of deep learning in is exclusively executed in offline hardware environments."
+      ],
+      "correct_answer": 2,
+      "explanation": "According to the document: \"Conclude how IoMT serves as a strategic IT-based innovation for \nachieving Smart Hospitals.\"",
+      "topic": "pathology, highlighting the growing role of deep learning in",
+      "difficulty": "Medium",
+      "source_reference": "Pages 7-11 — pathology, highlighting the growing role of deep learning in",
+      "id": 8
+    },
+    {
+      "question": "According to the material, what best describes 'itecture of an IoMT system typically'?",
+      "options": [
+        "Three main layers: the Data Collection Layer.",
+        "Remote patient \nmonitoring.",
+        "Bypasses standard evaluation criteria during runtime.",
+        "Aggregates external network requests sequentially."
+      ],
+      "correct_answer": 0,
+      "explanation": "As stated in the material: \"The architecture of an IoMT system typically \nconsists of three main layers: the Data Collection Layer, Data \nManagement Layer, and Medical Server/Application Layer.\"",
+      "topic": "15 Ans",
+      "difficulty": "Hard",
+      "source_reference": "Pages 12-14 — 15 Ans",
+      "id": 9
+    },
+    {
+      "question": "Which of the following statements is TRUE regarding 15 Ans?",
+      "options": [
+        "15 Ans strictly prohibits iterative optimization and validation.",
+        "15 Ans does not apply under the conditions described in the text.",
+        "Analyze the architecture and working of IoMT systems in \nhealthcare applications.",
+        "15 Ans is exclusively executed in offline hardware environments."
+      ],
+      "correct_answer": 2,
+      "explanation": "According to the document: \"Analyze the architecture and working of IoMT systems in \nhealthcare applications.\"",
+      "topic": "15 Ans",
+      "difficulty": "Medium",
+      "source_reference": "Pages 12-14 — 15 Ans",
+      "id": 10
+    },
+    {
+      "question": "Which of the following statements is TRUE regarding continuous patient monitoring, efficient data collection, and?",
+      "options": [
+        "continuous patient monitoring, efficient data collection, and is exclusively executed in offline hardware environments.",
+        "continuous patient monitoring, efficient data collection, and does not apply under the conditions described in the text.",
+        "continuous patient monitoring, efficient data collection, and strictly prohibits iterative optimization and validation.",
+        "These devices include smart \npatient monitors, ECG machines, infusion pumps, ventilators, \nwearable sensors, and connected medical equipment that \ncontinuously collect and transmit patient health data in real time."
+      ],
+      "correct_answer": 3,
+      "explanation": "According to the document: \"These devices include smart \npatient monitors, ECG machines, infusion pumps, ventilators, \nwearable sensors, and connected medical equipment that \ncontinuously collect and transmit patient health data in real time.\"",
+      "topic": "continuous patient monitoring, efficient data collection, and",
+      "difficulty": "Medium",
+      "source_reference": "Pages 15-16 — continuous patient monitoring, efficient data collection, and",
+      "id": 11
+    },
+    {
+      "question": "According to the material, what best describes 'B \nK5 \nAns \nThe Medical Server Layer'?",
+      "options": [
+        "Real-time patient monitoring.",
+        "Centralized healthcare \nservices.",
+        "Medical \nsensors.",
+        "Remote patient monitoring."
+      ],
+      "correct_answer": 1,
+      "explanation": "As stated in the material: \"CO2 \n2B \nK5 \nAns \nThe Medical Server Layer provides centralized healthcare \nservices, data analytics, and clinical decision support.\"",
+      "topic": "Conclude the significance of the Medical Server Layer in IoMT-",
+      "difficulty": "Medium",
+      "source_reference": "Pages 17-19 — Conclude the significance of the Medical Server Layer in IoMT-",
+      "id": 12
+    },
+    {
+      "question": "According to the material, what best describes 'This layer'?",
+      "options": [
+        "Remote patient monitoring.",
+        "Medical \nsensors.",
+        "Real-time patient monitoring.",
+        "Multiple interconnected layers that \nwork together to provide intelligent healthcare services."
+      ],
+      "correct_answer": 2,
+      "explanation": "As stated in the material: \"This layer enables real-time patient monitoring, automated alert \ngeneration, disease diagnosis, treatment recommendations, and \nremote healthcare services.\"",
+      "topic": "Conclude the significance of the Medical Server Layer in IoMT-",
+      "difficulty": "Hard",
+      "source_reference": "Pages 17-19 — Conclude the significance of the Medical Server Layer in IoMT-",
+      "id": 13
+    },
+    {
+      "question": "According to the material, what best describes 'CO2 \n2B \nK4 \nAns \nIoMT architecture'?",
+      "options": [
+        "Medical \nsensors.",
+        "Real-time monitoring.",
+        "Real-time patient monitoring.",
+        "Multiple interconnected layers that \nwork together to provide intelligent healthcare services."
+      ],
+      "correct_answer": 3,
+      "explanation": "As stated in the material: \"CO2 \n2B \nK4 \nAns \nIoMT architecture consists of multiple interconnected layers that \nwork together to provide intelligent healthcare services.\"",
+      "topic": "Conclude the significance of the Medical Server Layer in IoMT-",
+      "difficulty": "Hard",
+      "source_reference": "Pages 17-19 — Conclude the significance of the Medical Server Layer in IoMT-",
+      "id": 14
+    },
+    {
+      "question": "According to the material, what best describes 'The Data Collection Layer'?",
+      "options": [
+        "Medical \nsensors.",
+        "Centralized healthcare \nservices.",
+        "Multiple interconnected layers that \nwork together to provide intelligent healthcare services.",
+        "Real-time patient monitoring."
+      ],
+      "correct_answer": 0,
+      "explanation": "As stated in the material: \"The Data Collection Layer consists of medical \nsensors, wearable devices, and monitoring equipment that \ncontinuously gather patient health data such as heart rate, blood \npressure, ECG, temperature, and oxygen saturation.\"",
+      "topic": "Conclude the significance of the Medical Server Layer in IoMT-",
+      "difficulty": "Medium",
+      "source_reference": "Pages 17-19 — Conclude the significance of the Medical Server Layer in IoMT-",
+      "id": 15
+    },
+    {
+      "question": "According to the material, what best describes 'This \ncoordinated operation'?",
+      "options": [
+        "Real-time patient monitoring.",
+        "Medical \nsensors.",
+        "Real-time monitoring.",
+        "Centralized healthcare \nservices."
+      ],
+      "correct_answer": 2,
+      "explanation": "As stated in the material: \"This \ncoordinated operation enables real-time monitoring, improved \nhealthcare efficiency, and better patient \n \nCO2 \n2B \nK4 \n \nPart- C\n\n--- Page 19 ---\nQ.N\no \nQuestions \nCO’\ns \nUni\nt \nBloom’\ns Level \n1.\"",
+      "topic": "Conclude the significance of the Medical Server Layer in IoMT-",
+      "difficulty": "Easy",
+      "source_reference": "Pages 17-19 — Conclude the significance of the Medical Server Layer in IoMT-",
+      "id": 16
+    },
+    {
+      "question": "Which of the following statements is TRUE regarding Conclude the significance of the Medical Server Layer in IoMT-?",
+      "options": [
+        "Conclude the significance of the Medical Server Layer in IoMT- is exclusively executed in offline hardware environments.",
+        "Conclude the significance of the Medical Server Layer in IoMT- does not apply under the conditions described in the text.",
+        "Conclude the significance of the Medical Server Layer in IoMT- strictly prohibits iterative optimization and validation.",
+        "Conclude the significance of the Medical Server Layer in IoMTenabled healthcare systems."
+      ],
+      "correct_answer": 3,
+      "explanation": "According to the document: \"Conclude the significance of the Medical Server Layer in IoMTenabled healthcare systems.\"",
+      "topic": "Conclude the significance of the Medical Server Layer in IoMT-",
+      "difficulty": "Medium",
+      "source_reference": "Pages 17-19 — Conclude the significance of the Medical Server Layer in IoMT-",
+      "id": 17
+    },
+    {
+      "question": "According to the material, what best describes 'ystem for remote patient \nmonitoring'?",
+      "options": [
+        "Remote patient monitoring.",
+        "Wearable and \nimplantable medical devices that continuously \nmonitor physiological parameters such as heart rate.",
+        "Three major layers: the Data Collection \nLayer.",
+        "Quick \naccess to patient records and supports seamless communication \nbetween patients and healthcare providers."
+      ],
+      "correct_answer": 2,
+      "explanation": "As stated in the material: \"An IoMT-based healthcare monitoring system for remote patient \nmonitoring consists of three major layers: the Data Collection \nLayer, Data Management Layer, and Medical Server Layer, \nwhich work together to provide continuous monitoring and timely \nhealthcare services.\"",
+      "topic": "decision-making, remote consultations, and coordinated patient",
+      "difficulty": "Medium",
+      "source_reference": "Pages 20-22 — decision-making, remote consultations, and coordinated patient",
+      "id": 18
+    },
+    {
+      "question": "According to the material, what best describes 'Efficient data management'?",
+      "options": [
+        "Remote patient monitoring.",
+        "Quick \naccess to patient records and supports seamless communication \nbetween patients and healthcare providers.",
+        "Real-time remote patient monitoring.",
+        "Wearable and \nimplantable medical devices that continuously \nmonitor physiological parameters such as heart rate."
+      ],
+      "correct_answer": 1,
+      "explanation": "As stated in the material: \"Efficient data management enables quick \naccess to patient records and supports seamless communication \nbetween patients and healthcare providers.\"",
+      "topic": "decision-making, remote consultations, and coordinated patient",
+      "difficulty": "Easy",
+      "source_reference": "Pages 20-22 — decision-making, remote consultations, and coordinated patient",
+      "id": 19
+    },
+    {
+      "question": "According to the material, what best describes 'based healthcare \nmonitoring system'?",
+      "options": [
+        "Wearable and \nimplantable medical devices that continuously \nmonitor physiological parameters such as heart rate.",
+        "The coordination and \ncontrol of different IoMT architecture layers.",
+        "Real-time remote patient monitoring.",
+        "Remote patient monitoring."
+      ],
+      "correct_answer": 2,
+      "explanation": "As stated in the material: \"By integrating these three layers, the IoMT-based healthcare \nmonitoring system enables real-time remote patient monitoring, \nearly disease detection, personalized healthcare, improved clinical \nCO2 \n2C \nK6\n\n--- Page 21 ---\ndecision-making, reduced hospital visits, and enhanced patient \noutcomes.\"",
+      "topic": "decision-making, remote consultations, and coordinated patient",
+      "difficulty": "Medium",
+      "source_reference": "Pages 20-22 — decision-making, remote consultations, and coordinated patient",
+      "id": 20
+    },
+    {
+      "question": "According to the material, what best describes 'healthcare \nCO3 \n3A \nK1 \n2 Ans \nIoMT'?",
+      "options": [
+        "Wearable and \nimplantable medical devices that continuously \nmonitor physiological parameters such as heart rate.",
+        "Remote patient monitoring.",
+        "Quick \naccess to patient records and supports seamless communication \nbetween patients and healthcare providers.",
+        "Real-time remote patient monitoring."
+      ],
+      "correct_answer": 1,
+      "explanation": "As stated in the material: \"Identify the industrial applications of IoMT in \nhealthcare \nCO3 \n3A \nK1 \n2 Ans \nIoMT is used for remote patient monitoring, hospital \nasset tracking, telemedicine, smart diagnostics, \npredictive maintenance of medical equipment, and \nhealthcare data management.\"",
+      "topic": "decision-making, remote consultations, and coordinated patient",
+      "difficulty": "Medium",
+      "source_reference": "Pages 20-22 — decision-making, remote consultations, and coordinated patient",
+      "id": 21
+    },
+    {
+      "question": "According to the material, what best describes 'O3 \n3A \nK1 \n3 Ans \nBody-Centric IoMT'?",
+      "options": [
+        "Three major layers: the Data Collection \nLayer.",
+        "Quick \naccess to patient records and supports seamless communication \nbetween patients and healthcare providers.",
+        "Remote patient monitoring.",
+        "Wearable and \nimplantable medical devices that continuously \nmonitor physiological parameters such as heart rate."
+      ],
+      "correct_answer": 3,
+      "explanation": "As stated in the material: \"Recall Body-Centric IoMT \nCO3 \n3A \nK1 \n3 Ans \nBody-Centric IoMT refers to wearable and \nimplantable medical devices that continuously \nmonitor physiological parameters such as heart rate, \nblood pressure, and body temperature.\"",
+      "topic": "decision-making, remote consultations, and coordinated patient",
+      "difficulty": "Easy",
+      "source_reference": "Pages 20-22 — decision-making, remote consultations, and coordinated patient",
+      "id": 22
+    },
+    {
+      "question": "According to the material, what best describes 'CO3 \n3A \nK2 \n5 Ans \nLayer management'?",
+      "options": [
+        "Real-time remote patient monitoring.",
+        "Wearable and \nimplantable medical devices that continuously \nmonitor physiological parameters such as heart rate.",
+        "The coordination and \ncontrol of different IoMT architecture layers.",
+        "Remote patient monitoring."
+      ],
+      "correct_answer": 2,
+      "explanation": "As stated in the material: \"Discuss about layer management in IoMT \nCO3 \n3A \nK2 \n5 Ans \nLayer management refers to the coordination and \ncontrol of different IoMT architecture layers, \nincluding sensing, communication, processing, and \napplication layers.\"",
+      "topic": "decision-making, remote consultations, and coordinated patient",
+      "difficulty": "Easy",
+      "source_reference": "Pages 20-22 — decision-making, remote consultations, and coordinated patient",
+      "id": 23
+    },
+    {
+      "question": "Which of the following statements is TRUE regarding decision-making, remote consultations, and coordinated patient?",
+      "options": [
+        "decision-making, remote consultations, and coordinated patient strictly prohibits iterative optimization and validation.",
+        "decision-making, remote consultations, and coordinated patient does not apply under the conditions described in the text.",
+        "The ecosystem also incorporates data security and privacy \nmechanisms, including encryption, authentication, consent \nmanagement, and compliance with healthcare standards.",
+        "decision-making, remote consultations, and coordinated patient is exclusively executed in offline hardware environments."
+      ],
+      "correct_answer": 2,
+      "explanation": "According to the document: \"The ecosystem also incorporates data security and privacy \nmechanisms, including encryption, authentication, consent \nmanagement, and compliance with healthcare standards.\"",
+      "topic": "decision-making, remote consultations, and coordinated patient",
+      "difficulty": "Medium",
+      "source_reference": "Pages 20-22 — decision-making, remote consultations, and coordinated patient",
+      "id": 24
+    },
+    {
+      "question": "Which of the following statements is TRUE regarding medical devices, and healthcare systems for analysis?",
+      "options": [
+        "Illustrate on enabling biosensors \nCO3 \n3A \nK3 \n11 Ans \nnabling biosensors are biological sensing devices \nthat detect physiological or biochemical parameters \nand convert them into measurable electrical signals.",
+        "medical devices, and healthcare systems for analysis does not apply under the conditions described in the text.",
+        "medical devices, and healthcare systems for analysis strictly prohibits iterative optimization and validation.",
+        "medical devices, and healthcare systems for analysis is exclusively executed in offline hardware environments."
+      ],
+      "correct_answer": 0,
+      "explanation": "According to the document: \"Illustrate on enabling biosensors \nCO3 \n3A \nK3 \n11 Ans \nnabling biosensors are biological sensing devices \nthat detect physiological or biochemical parameters \nand convert them into measurable electrical signals.\"",
+      "topic": "medical devices, and healthcare systems for analysis",
+      "difficulty": "Medium",
+      "source_reference": "Pages 23-26 — medical devices, and healthcare systems for analysis",
+      "id": 25
+    },
+    {
+      "question": "According to the material, what best describes 'Service Layer'?",
+      "options": [
+        "Healthcare applications.",
+        "Healthcare services to users.",
+        "Bypasses standard evaluation criteria during runtime.",
+        "Stores intermediate calculations permanently on disk."
+      ],
+      "correct_answer": 0,
+      "explanation": "As stated in the material: \"Service Layer \nProvides healthcare applications.\"",
+      "topic": "Medication reminders.",
+      "difficulty": "Hard",
+      "source_reference": "Pages 27-30 — Medication reminders.",
+      "id": 26
+    },
+    {
+      "question": "According to the material, what best describes 'Layer \nCO3 \n3C \nK6\n\n--- Page 29 ---'?",
+      "options": [
+        "Healthcare applications.",
+        "Healthcare services to users.",
+        "Stores intermediate calculations permanently on disk.",
+        "Executes arbitrary code in unverified memory segments."
+      ],
+      "correct_answer": 1,
+      "explanation": "As stated in the material: \"Application Layer \nCO3 \n3C \nK6\n\n--- Page 29 ---\nProvides healthcare services to users.\"",
+      "topic": "Medication reminders.",
+      "difficulty": "Easy",
+      "source_reference": "Pages 27-30 — Medication reminders.",
+      "id": 27
+    },
+    {
+      "question": "Which of the following statements is TRUE regarding Medication reminders.?",
+      "options": [
+        "Medication reminders. does not apply under the conditions described in the text.",
+        "Infer Software Defined IoMT and Augmented Reality for \nIoMT.",
+        "Medication reminders. strictly prohibits iterative optimization and validation.",
+        "Medication reminders. is exclusively executed in offline hardware environments."
+      ],
+      "correct_answer": 1,
+      "explanation": "According to the document: \"Infer Software Defined IoMT and Augmented Reality for \nIoMT.\"",
+      "topic": "Medication reminders.",
+      "difficulty": "Medium",
+      "source_reference": "Pages 27-30 — Medication reminders.",
+      "id": 28
+    },
+    {
+      "question": "According to the material, what best describes 'in IoMT \nCO4 \n4A \nK1 \n11 Ans \nIt'?",
+      "options": [
+        "Encryption algorithms designed to \nprovide security with minimal computational and \nenergy overhead.",
+        "Wearable sensors.",
+        "Services like \nremote diagnosis.",
+        "A decentralized."
+      ],
+      "correct_answer": 0,
+      "explanation": "As stated in the material: \"State the lightweight cryptography\" in IoMT \nCO4 \n4A \nK1 \n11 Ans \nIt refers to encryption algorithms designed to \nprovide security with minimal computational and \nenergy overhead, suitable for resource-constrained \nIoMT devices.\"",
+      "topic": "10 Ans",
+      "difficulty": "Easy",
+      "source_reference": "Pages 31-33 — 10 Ans",
+      "id": 29
+    },
+    {
+      "question": "According to the material, what best describes 'al  \nCO4 \n4A \nK3 \n14 Ans \nBlockchain'?",
+      "options": [
+        "Wearable sensors.",
+        "Services like \nremote diagnosis.",
+        "A decentralized.",
+        "Encryption algorithms designed to \nprovide security with minimal computational and \nenergy overhead."
+      ],
+      "correct_answer": 2,
+      "explanation": "As stated in the material: \"Demonstrate the role of blockchain's potential  \nCO4 \n4A \nK3 \n14 Ans \nBlockchain provides a decentralized, tamper-proof \nledger for securely recording and verifying health \ndata transactions, enhancing trust and integrity.\"",
+      "topic": "10 Ans",
+      "difficulty": "Hard",
+      "source_reference": "Pages 31-33 — 10 Ans",
+      "id": 30
+    },
+    {
+      "question": "According to the material, what best describes 'Sensing Layer \nThis layer'?",
+      "options": [
+        "Encryption algorithms designed to \nprovide security with minimal computational and \nenergy overhead.",
+        "A decentralized.",
+        "Services like \nremote diagnosis.",
+        "Wearable sensors."
+      ],
+      "correct_answer": 3,
+      "explanation": "As stated in the material: \"CO4 \n4B \nK4 \n1 Ans \nA secured IoT-enabled healthcare architecture is generally \norganized into four layers, each with specific security \nresponsibilities: \na) Perception/Sensing Layer \nThis layer consists of wearable sensors, implantable devices, \nand medical equipment (ECG monitors, glucose sensors, smart \npacemakers) that collect physiological data.\"",
+      "topic": "10 Ans",
+      "difficulty": "Easy",
+      "source_reference": "Pages 31-33 — 10 Ans",
+      "id": 31
+    },
+    {
+      "question": "According to the material, what best describes 'This layer stores data long-term and'?",
+      "options": [
+        "A decentralized.",
+        "Services like \nremote diagnosis.",
+        "Wearable sensors.",
+        "Encryption algorithms designed to \nprovide security with minimal computational and \nenergy overhead."
+      ],
+      "correct_answer": 1,
+      "explanation": "As stated in the material: \"CO4 \n4B \nK4\n\n--- Page 32 ---\nd) Cloud/Application Layer \nThis layer stores data long-term and provides services like \nremote diagnosis, health analytics dashboards, and alerts to \ndoctors.\"",
+      "topic": "10 Ans",
+      "difficulty": "Hard",
+      "source_reference": "Pages 31-33 — 10 Ans",
+      "id": 32
+    },
+    {
+      "question": "Which of the following statements is TRUE regarding 10 Ans?",
+      "options": [
+        "State the lightweight cryptography\" in IoMT \nCO4 \n4A \nK1 \n11 Ans \nIt refers to encryption algorithms designed to \nprovide security with minimal computational and \nenergy overhead, suitable for resource-constrained \nIoMT devices.",
+        "10 Ans does not apply under the conditions described in the text.",
+        "10 Ans strictly prohibits iterative optimization and validation.",
+        "10 Ans is exclusively executed in offline hardware environments."
+      ],
+      "correct_answer": 0,
+      "explanation": "According to the document: \"State the lightweight cryptography\" in IoMT \nCO4 \n4A \nK1 \n11 Ans \nIt refers to encryption algorithms designed to \nprovide security with minimal computational and \nenergy overhead, suitable for resource-constrained \nIoMT devices.\"",
+      "topic": "10 Ans",
+      "difficulty": "Medium",
+      "source_reference": "Pages 31-33 — 10 Ans",
+      "id": 33
+    },
+    {
+      "question": "Which of the following statements is TRUE regarding c) Scalability?",
+      "options": [
+        "c) Scalability strictly prohibits iterative optimization and validation.",
+        "c) Scalability does not apply under the conditions described in the text.",
+        "d) Real-Time Requirements \nHealthcare applications need low-latency responses (e.g., \nemergency alerts); heavy security processing can introduce \ndelays, risking patient safety.",
+        "c) Scalability is exclusively executed in offline hardware environments."
+      ],
+      "correct_answer": 2,
+      "explanation": "According to the document: \"d) Real-Time Requirements \nHealthcare applications need low-latency responses (e.g., \nemergency alerts); heavy security processing can introduce \ndelays, risking patient safety.\"",
+      "topic": "c) Scalability",
+      "difficulty": "Medium",
+      "source_reference": "Pages 34-35 — c) Scalability",
+      "id": 34
+    },
+    {
+      "question": "According to the material, what best describes 'essing critical health data \nlocally'?",
+      "options": [
+        "Faster emergency responses (e.",
+        "Executes arbitrary code in unverified memory segments.",
+        "Stores intermediate calculations permanently on disk.",
+        "Bypasses standard evaluation criteria during runtime."
+      ],
+      "correct_answer": 0,
+      "explanation": "As stated in the material: \"c) Edge Computing \n• \nReduced Latency: Processing critical health data \nlocally enables faster emergency responses (e.g., cardiac \narrest detection).\"",
+      "topic": "6 Ans",
+      "difficulty": "Hard",
+      "source_reference": "Pages 36-38 — 6 Ans",
+      "id": 35
+    },
+    {
+      "question": "Which of the following statements is TRUE regarding 6 Ans?",
+      "options": [
+        "6 Ans is exclusively executed in offline hardware environments.",
+        "6 Ans does not apply under the conditions described in the text.",
+        "6 Ans strictly prohibits iterative optimization and validation.",
+        "• \nLightweight authentication (e.g., Physical Unclonable \nFunctions - PUFs)."
+      ],
+      "correct_answer": 3,
+      "explanation": "According to the document: \"• \nLightweight authentication (e.g., Physical Unclonable \nFunctions - PUFs).\"",
+      "topic": "6 Ans",
+      "difficulty": "Medium",
+      "source_reference": "Pages 36-38 — 6 Ans",
+      "id": 36
+    },
+    {
+      "question": "Which of the following statements is TRUE regarding Components?",
+      "options": [
+        "Components strictly prohibits iterative optimization and validation.",
+        "Components does not apply under the conditions described in the text.",
+        "• \nFunction: Long-term storage, trend \nanalysis, AI-based prediction (e.g., \npredicting hypoglycemic episodes), and \nremote consultation.",
+        "Components is exclusively executed in offline hardware environments."
+      ],
+      "correct_answer": 2,
+      "explanation": "According to the document: \"• \nFunction: Long-term storage, trend \nanalysis, AI-based prediction (e.g., \npredicting hypoglycemic episodes), and \nremote consultation.\"",
+      "topic": "Components",
+      "difficulty": "Medium",
+      "source_reference": "Pages 39-41 — Components",
+      "id": 37
+    },
+    {
+      "question": "Which of the following statements is TRUE regarding Unit- 5?",
+      "options": [
+        "Unit- 5 is exclusively executed in offline hardware environments.",
+        "Unit- 5 does not apply under the conditions described in the text.",
+        "Unit- 5 strictly prohibits iterative optimization and validation.",
+        "CO5 \n5A \nK1 \n1 Ans \n \nCO5 \n5A \nK1 \n2."
+      ],
+      "correct_answer": 3,
+      "explanation": "According to the document: \"CO5 \n5A \nK1 \n1 Ans \n \nCO5 \n5A \nK1 \n2.\"",
+      "topic": "Unit- 5",
+      "difficulty": "Medium",
+      "source_reference": "Pages 42-43 — Unit- 5",
+      "id": 38
+    }
+  ]
+}

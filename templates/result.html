@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Results & Study Analysis — AI StudyMate</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="/" class="brand-logo">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+          </svg>
+        </div>
+        <span>AI StudyMate</span>
+      </a>
+
+      <div class="nav-cta">
+        <a href="/upload" class="btn btn-secondary btn-sm">Upload New PDF</a>
+        <a href="/" class="btn btn-outline-primary btn-sm">Home</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <div class="container result-layout">
+      
+      <!-- Loading State -->
+      <div id="result-loading" class="card text-center" style="padding: 4rem 2rem;">
+        <div class="spinner"></div>
+        <h3>Evaluating Your Answers...</h3>
+        <p class="text-muted" style="margin-top: 0.5rem;">Compiling comprehensive topic mastery analysis and error study notes.</p>
+      </div>
+
+      <!-- Dashboard Content (Rendered by result.js) -->
+      <div id="result-content" style="display: none;">
+        
+        <!-- Score Hero Card -->
+        <div class="score-hero-card">
+          
+          <!-- Circular Score Progress Ring -->
+          <div class="score-radial-wrap">
+            <svg class="score-radial-svg" viewBox="0 0 160 160">
+              <circle class="score-radial-bg" cx="80" cy="80" r="70"></circle>
+              <circle id="score-radial-progress" class="score-radial-progress" cx="80" cy="80" r="70"></circle>
+            </svg>
+            <div id="score-number" class="score-radial-number">0%</div>
+          </div>
+
+          <h2 id="tier-title" class="tier-title">Test Completed</h2>
+          <p id="tier-message" class="tier-message">Analyzing your performance across key topics.</p>
+
+          <!-- Stat Counters -->
+          <div class="stats-grid">
+            <div class="stat-box">
+              <div id="stat-total" class="stat-value">0</div>
+              <div class="stat-label">Total Questions</div>
+            </div>
+
+            <div class="stat-box">
+              <div id="stat-correct" class="stat-value" style="color: var(--success);">0</div>
+              <div class="stat-label">Correct</div>
+            </div>
+
+            <div class="stat-box">
+              <div id="stat-wrong" class="stat-value" style="color: var(--error);">0</div>
+              <div class="stat-label">Wrong</div>
+            </div>
+
+            <div class="stat-box">
+              <div id="stat-unanswered" class="stat-value" style="color: var(--warning);">0</div>
+              <div class="stat-label">Unanswered</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Topic-Wise Performance Card -->
+        <div class="topic-performance-card">
+          <div class="card-header">
+            <h3>Topic Performance & Mastery</h3>
+            <span class="text-xs text-muted">Accuracy breakdown by subject domain</span>
+          </div>
+
+          <div id="topic-breakdown-container">
+            <!-- Rendered by result.js -->
+          </div>
+        </div>
+
+        <!-- Review & Study Section -->
+        <div class="study-header">
+          <div>
+            <h2>Review & Study</h2>
+            <p class="text-muted text-sm" style="margin-top: 0.25rem;">Study your mistakes, understand why answers are correct, and review source citations.</p>
+          </div>
+
+          <!-- Study Filter Pills -->
+          <div class="filter-pills">
+            <button type="button" class="filter-pill active" data-filter="all">
+              All (<span id="count-all">0</span>)
+            </button>
+            <button type="button" class="filter-pill" data-filter="wrong">
+              ❌ Incorrect (<span id="count-wrong">0</span>)
+            </button>
+            <button type="button" class="filter-pill" data-filter="correct">
+              ✓ Correct (<span id="count-correct">0</span>)
+            </button>
+            <button type="button" class="filter-pill" data-filter="unanswered">
+              ○ Unanswered (<span id="count-unanswered">0</span>)
+            </button>
+          </div>
+        </div>
+
+        <!-- Detailed Review Question Cards -->
+        <div id="review-cards-container">
+          <!-- Rendered by result.js -->
+        </div>
+
+        <!-- Bottom Actions (Study First - No Retry) -->
+        <div style="margin: 3rem 0; text-align: center; border-top: 1px solid var(--border-color); padding-top: 2rem;">
+          <p class="text-muted text-sm" style="margin-bottom: 1.25rem;">
+            💡 <strong>Study Advice:</strong> Review the incorrect questions above, verify the source pages in your PDF, and consolidate your notes before taking tests on new chapters.
+          </p>
+          <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+            <button type="button" onclick="window.print()" class="btn btn-secondary">
+              🖨️ Print / Save Study Summary
+            </button>
+            <a href="/upload" class="btn btn-primary">
+              📁 Upload Another Subject PDF
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>AI StudyMate — AI-Powered PDF to Mock Test & Interview Preparation Platform.</p>
+      <p class="text-xs" style="margin-top: 0.5rem;">Disciplined Study-First Methodology • Grounded Academic Synthesis</p>
+    </div>
+  </footer>
+
+  <script>
+    window.TEST_ID = "{{ test_id }}";
+  </script>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/result.js') }}"></script>
+</body>
+</html>

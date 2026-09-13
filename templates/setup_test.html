@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Setup Mock Test — AI StudyMate</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="/" class="brand-logo">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+          </svg>
+        </div>
+        <span>AI StudyMate</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="/" class="nav-link">Home</a></li>
+        <li><a href="/upload" class="nav-link">Upload New PDF</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <div class="container setup-container">
+      
+      <div style="text-align: center; margin-bottom: 2rem;">
+        <h1>Configure Your Mock Test</h1>
+        <p class="text-muted" style="margin-top: 0.5rem;">Select question volume and difficulty. Questions and answer options will be freshly randomized.</p>
+      </div>
+
+      <!-- Question Bank Summary Banner -->
+      <div class="bank-summary-box">
+        <div>
+          <div style="font-weight: 700; color: var(--text-main); font-size: 1.1rem;">
+            📚 {{ metadata.filename or 'Subject PDF' }}
+          </div>
+          <div class="text-sm text-muted" style="margin-top: 0.25rem;">
+            {{ total_questions }} Grounded Questions Available across {{ metadata.total_pages or 1 }} Pages
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 0.5rem;">
+          <span class="badge badge-success">✓ Grounded in Syllabus</span>
+          <span class="badge badge-neutral">⏱ 60s / Q</span>
+        </div>
+      </div>
+
+      <!-- Test Configuration Card -->
+      <div class="card">
+        
+        <!-- Number of Questions -->
+        <div class="setup-section-title">1. Number of Questions</div>
+        <div class="chip-group" id="count-group">
+          <div class="chip" data-value="10">10 Questions</div>
+          <div class="chip selected" data-value="20">20 Questions (Default)</div>
+          <div class="chip" data-value="30">30 Questions</div>
+          <div class="chip" data-value="50">50 Questions</div>
+        </div>
+
+        <!-- Difficulty -->
+        <div class="setup-section-title">2. Target Difficulty</div>
+        <div class="chip-group" id="difficulty-group">
+          <div class="chip selected" data-value="Mixed">Mixed Difficulty (Recommended)</div>
+          <div class="chip" data-value="Easy">Easy (Fundamentals)</div>
+          <div class="chip" data-value="Medium">Medium (Application)</div>
+          <div class="chip" data-value="Hard">Hard (Deep Analytical)</div>
+        </div>
+
+        <!-- Test Rules Reminder -->
+        <div style="background: #f8fafc; border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1.25rem; margin-bottom: 2rem;">
+          <div style="font-weight: 700; font-size: 0.95rem; color: var(--text-main); margin-bottom: 0.5rem;">
+            ⚠️ Examination Rules & Timer Guidelines
+          </div>
+          <ul style="padding-left: 1.25rem; font-size: 0.875rem; color: var(--text-secondary); line-height: 1.6;">
+            <li><strong>Strict 60 Seconds per question:</strong> The timer resets to 01:00 for each new question.</li>
+            <li><strong>Auto-Advance:</strong> When the countdown reaches 00:00, the test automatically advances.</li>
+            <li><strong>Locked Expired Questions:</strong> Once time expires on a question, it cannot be revisited.</li>
+            <li><strong>Auto-Submission:</strong> When the timer expires on the final question, the entire test is submitted automatically.</li>
+          </ul>
+        </div>
+
+        <!-- Launch Button -->
+        <button type="button" id="start-test-btn" class="btn btn-primary btn-lg" style="width: 100%;">
+          Start Timed Mock Test →
+        </button>
+
+      </div>
+
+    </div>
+  </main>
+
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      let selectedCount = 20;
+      let selectedDifficulty = 'Mixed';
+
+      // Count chip selector
+      const countChips = document.querySelectorAll('#count-group .chip');
+      countChips.forEach(chip => {
+        chip.addEventListener('click', () => {
+          countChips.forEach(c => c.classList.remove('selected'));
+          chip.classList.add('selected');
+          selectedCount = parseInt(chip.getAttribute('data-value'), 10);
+        });
+      });
+
+      // Difficulty chip selector
+      const diffChips = document.querySelectorAll('#difficulty-group .chip');
+      diffChips.forEach(chip => {
+        chip.addEventListener('click', () => {
+          diffChips.forEach(c => c.classList.remove('selected'));
+          chip.classList.add('selected');
+          selectedDifficulty = chip.getAttribute('data-value');
+        });
+      });
+
+      // Start Test
+      const startBtn = document.getElementById('start-test-btn');
+      startBtn.addEventListener('click', async () => {
+        startBtn.disabled = true;
+        startBtn.textContent = 'Preparing Randomized Test...';
+
+        try {
+          const res = await fetch('/api/start-test', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              question_count: selectedCount,
+              difficulty: selectedDifficulty
+            })
+          });
+
+          const data = await res.json();
+          if (data.success && data.test_session) {
+            // Store session in browser sessionStorage
+            sessionStorage.setItem('active_test_session', JSON.stringify(data.test_session));
+            window.location.href = '/test';
+          } else {
+            UI.showToast(data.error || 'Failed to start test session.', 'error');
+            startBtn.disabled = false;
+            startBtn.textContent = 'Start Timed Mock Test →';
+          }
+        } catch (err) {
+          UI.showToast('Network error starting test.', 'error');
+          startBtn.disabled = false;
+          startBtn.textContent = 'Start Timed Mock Test →';
+        }
+      });
+    });
+  </script>
+</body>
+</html>

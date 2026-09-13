@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analyzing Study Material — AI StudyMate</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="/" class="brand-logo">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+          </svg>
+        </div>
+        <span>AI StudyMate</span>
+      </a>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <div class="container">
+      <div class="card processing-card">
+        
+        <div class="spinner" id="processing-spinner"></div>
+        <h2 id="status-headline">Analyzing your study material...</h2>
+        <p class="text-muted" id="status-subtext" style="margin-top: 0.5rem;">Extracting academic concepts and generating syllabus-grounded MCQs.</p>
+
+        <!-- Progress Bar -->
+        <div class="progress-bar-container">
+          <div id="progress-fill" class="progress-bar-fill"></div>
+        </div>
+
+        <!-- Checklist -->
+        <ul class="checklist">
+          <li id="step-1" class="checklist-item active">
+            <div class="check-icon">✓</div>
+            <span>PDF uploaded & validated</span>
+          </li>
+          <li id="step-2" class="checklist-item">
+            <div class="check-icon">✓</div>
+            <span>Text extracted page by page (PyMuPDF)</span>
+          </li>
+          <li id="step-3" class="checklist-item">
+            <div class="check-icon">✓</div>
+            <span>Academic topics & section boundaries identified</span>
+          </li>
+          <li id="step-4" class="checklist-item">
+            <div class="check-icon">✓</div>
+            <span>Key concepts, definitions & algorithms analyzed</span>
+          </li>
+          <li id="step-5" class="checklist-item">
+            <div class="check-icon">✓</div>
+            <span>High-quality MCQs & explanations generated</span>
+          </li>
+          <li id="step-6" class="checklist-item">
+            <div class="check-icon">✓</div>
+            <span>Question bank verified & ready</span>
+          </li>
+        </ul>
+
+        <!-- Error Card (Hidden by default) -->
+        <div id="error-card" style="display: none; margin-top: 2rem; background: var(--error-light); border: 1px solid var(--error-border); border-radius: var(--radius-md); padding: 1.25rem; text-align: left;">
+          <h4 style="color: var(--error-text);">Processing Encountered an Issue</h4>
+          <p id="error-message" style="color: var(--error-text); font-size: 0.95rem; margin-top: 0.35rem;"></p>
+          <div style="margin-top: 1rem;">
+            <a href="/upload" class="btn btn-secondary btn-sm">← Back to Upload</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      const progressFill = document.getElementById('progress-fill');
+      const headline = document.getElementById('status-headline');
+      const subtext = document.getElementById('status-subtext');
+      const errorCard = document.getElementById('error-card');
+      const errorMessage = document.getElementById('error-message');
+      const spinner = document.getElementById('processing-spinner');
+
+      function setStepState(stepNum, state) {
+        const item = document.getElementById(`step-${stepNum}`);
+        if (!item) return;
+        item.classList.remove('active', 'done');
+        if (state) item.classList.add(state);
+      }
+
+      function updateProgress(pct, msg) {
+        progressFill.style.width = `${pct}%`;
+        if (msg) subtext.textContent = msg;
+      }
+
+      // Step 1: Upload validated
+      setStepState(1, 'done');
+      setStepState(2, 'active');
+      updateProgress(20, 'Extracting text and cleaning document structure...');
+
+      try {
+        // Send request to process backend
+        const processPromise = fetch('/api/process', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' }
+        });
+
+        // Animate progression through steps realistically while waiting
+        setTimeout(() => {
+          setStepState(2, 'done');
+          setStepState(3, 'active');
+          updateProgress(45, 'Identifying key chapters, sections, and topics...');
+        }, 1200);
+
+        setTimeout(() => {
+          setStepState(3, 'done');
+          setStepState(4, 'active');
+          updateProgress(65, 'Analyzing important examinable definitions & concepts with AI...');
+        }, 2500);
+
+        setTimeout(() => {
+          setStepState(4, 'done');
+          setStepState(5, 'active');
+          updateProgress(85, 'Formulating balanced 4-option MCQs and explanations...');
+        }, 4000);
+
+        const response = await processPromise;
+        const data = await response.json();
+
+        if (data.success) {
+          setStepState(5, 'done');
+          setStepState(6, 'done');
+          updateProgress(100, `Generated ${data.total_questions} grounded MCQs across ${data.total_pages} pages!`);
+          headline.textContent = 'Question Bank Ready!';
+          spinner.style.borderTopColor = 'var(--success)';
+
+          setTimeout(() => {
+            window.location.href = data.redirect_url || '/setup-test';
+          }, 1200);
+        } else {
+          throw new Error(data.error || 'Failed to process document.');
+        }
+
+      } catch (err) {
+        spinner.style.display = 'none';
+        headline.textContent = 'Extraction Failed';
+        subtext.textContent = 'Unable to complete question generation.';
+        errorMessage.textContent = err.message || 'We couldn\'t extract readable text from this PDF. Please try a text-based PDF.';
+        errorCard.style.display = 'block';
+      }
+    });
+  </script>
+</body>
+</html>
