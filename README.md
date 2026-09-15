@@ -29,7 +29,7 @@
   * Concise 2–4 sentence explanations with source page references (e.g., `📄 Source: Page 4`).
   * **Strictly No Retries**: Test is finished upon submission to prioritize studying mistakes.
 
----
+--
 
 ## 🛠️ Technology Stack
 
